@@ -1,0 +1,73 @@
+A/* Basic body style */
+body {
+  margin: 0;
+  background: black;
+  font-family: monospace;
+  color: #00ff66;
+}
+
+/* The main screen */
+#screen {
+  width: 800px;
+  height: 480px;
+  margin: 20px auto;
+  padding: 10px;
+  background-image: url("images/pipboy_bg_loop1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #00ff66;
+  box-shadow: 0 0 30px #00ff66;
+  position: relative;
+}
+
+/* Header */
+#header {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #00ff66;
+}
+
+/* Tabs container */
+#tabs {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #00ff66;
+  margin-bottom: 10px;
+}
+
+/* Individual tabs */
+.tab {
+  cursor: pointer;
+  opacity: 0.5;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+/* Active tab highlight */
+.tab.active {
+  opacity: 1;
+  text-shadow: 0 0 8px #00ff66;
+}
+
+/* Pages */
+.page {
+  display: none; /* hide by default */
+}
+
+/* Active page */
+.page.active {
+  display: block; /* show only the active page */
+}
+
+/* Optional: make paragraphs look nice */
+.page p {
+  margin: 5px 0;
+}
+.page img {
+    filter: brightness(100%) saturate(100%) invert(61%) sepia(89%) 
+          saturate(422%) hue-rotate(85deg) brightness(97%) contrast(97%);
+}
+
+
